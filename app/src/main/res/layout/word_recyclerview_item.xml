@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/listWordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/listMeaningTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meaning"
+        android:layout_below="@+id/listWordTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/listDeleteButton"
+        style="@style/Widget.Material3.Button.IconButton"
+        app:icon="@drawable/delete_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/listEditButtonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.Button.IconButton"
+        app:icon="@drawable/edit_icon"
+        android:layout_toStartOf="@+id/listDeleteButton" />
+
+</RelativeLayout>
